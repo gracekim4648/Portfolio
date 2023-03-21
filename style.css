@@ -13,6 +13,9 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-light-green: #c1e1c1;
+  --color-pastel-green: #b1d4b1;
+  --color-pastel-dark-green: #9ebe9e;
 
   /* Font size */
   --font-large: 48px;
@@ -51,6 +54,13 @@ ul {
   padding-left: 0;
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 /* Typography */
 
 h1 {
@@ -86,7 +96,7 @@ p {
 #navebar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pink);
+  background-color: var(--color-pastel-dark-green);
   align-items: center;
   color: var(--color-white);
   padding: 16px;
@@ -114,4 +124,34 @@ p {
 
 .navbar_menu_item:hover {
   background-color: var(--color-dark-pink);
+}
+
+/* Home */
+
+#home {
+  background: url('imgs/home-backgound-2.png') center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home_avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home_title,
+.home_description {
+  color: var(--color-white);
+}
+
+.home_contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: 4px;
 }
