@@ -17,6 +17,7 @@
   --color-pastel-green: #b1d4b1;
   --color-pastel-dark-green: #9ebe9e;
   --color-baby-pink: #d4c1c9;
+  --color-pink-red: #a9254c;
 
   /* Font size */
   --font-large: 48px;
@@ -147,7 +148,7 @@ p {
 
 .home_title,
 .home_description {
-  color: var(--color-white);
+  color: var(--color-pink-red);
 }
 
 .home_contact {
@@ -165,6 +166,11 @@ p {
 .section {
   padding: 50px;
   text-align: center;
+  /* max-width: 1200px; */
+  margin: auto;
+}
+
+.section_container {
   max-width: 1200px;
   margin: auto;
 }
@@ -210,6 +216,7 @@ p {
 .job {
   display: flex;
   align-items: center;
+  margin: 10px 0;
 }
 
 .job_description {
@@ -239,4 +246,60 @@ p {
   box-sizing: content-box;
   width: 250px;
   height: 70px;
+}
+
+/* Skill */
+
+#skills {
+  background-color: var(--color-yellow);
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+
+.skillset_title {
+  color: var(--color-white);
+}
+
+.skillset_left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.skill {
+  margin-bottom: 32px;
+}
+
+.skillset_right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: var(--color-grey);
+}
+
+.skill_description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill_bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill_value {
+  height: 3px;
+  background-color: var(--color-orange);
+}
+
+.tools,
+.etc {
+  padding: 20px;
 }
