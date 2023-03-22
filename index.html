@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grace's Portfolio</title>
     <meta name="description" content="Portfolio for Frontend Developer Grace" />
@@ -28,35 +28,37 @@
         <i class="fab fa-diaspora"></i>
         <a href="#">Grace</a>
       </div>
-      <div class="navbar_menu">
-        <ul class="navbar_menu">
-          <li class="navbar_menu_item active">Home</li>
-          <li class="navbar_menu_item">About</li>
-          <li class="navbar_menu_item">Skills</li>
-          <li class="navbar_menu_item">My Work</li>
-          <li class="navbar_menu_item">Testimonial</li>
-          <li class="navbar_menu_item">Contact</li>
-        </ul>
-      </div>
+      <ul class="navbar_menu">
+        <li class="navbar_menu_item active">Home</li>
+        <li class="navbar_menu_item">About</li>
+        <li class="navbar_menu_item">Skills</li>
+        <li class="navbar_menu_item">My Work</li>
+        <li class="navbar_menu_item">Testimonial</li>
+        <li class="navbar_menu_item">Contact</li>
+      </ul>
+      <!-- Tiggle button -->
     </nav>
 
     <!-- Home -->
     <section id="home">
-      <img
-        src="imgs/Resume.jpg"
-        alt="Grace's profile photo"
-        class="home_avatar"
-      />
-      <h1 class="home_title">
-        Hello,<br />
-        I'm Dream Coder
-      </h1>
-      <h2 class="home_description">A front-end developer residing in US</h2>
-      <button class="home_contact">CONTACT ME</button>
+      <div class="home__container">
+        <img
+          src="imgs/Resume.jpg"
+          alt="Grace's profile photo"
+          class="home_avatar"
+        />
+        <h1 class="home_title">
+          Hello,<br />
+          I'm Dream Coder
+        </h1>
+        <h2 class="home_description">A front-end developer residing in US</h2>
+        <button class="home_contact">CONTACT ME</button>
+      </div>
     </section>
+
     <!-- About -->
-    <section id="about" class="section section container">
-      <h1>About Me</h1>
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
       <p>
         Experienced in IT department for about three years, working as a junior
         tech and network engineer
@@ -81,7 +83,7 @@
             <!-- </a> -->
           </div>
           <h2 class="major_title">Mobile</h2>
-          <div class="major_description">Android,iOS, React</div>
+          <p class="major_description">Android,iOS, React</p>
         </div>
         <div class="major">
           <div class="major_icon">
@@ -90,7 +92,7 @@
             <!-- </a> -->
           </div>
           <h2 class="major_title">Network</h2>
-          <div class="major_description">Layer 3 and 4</div>
+          <p class="major_description">Layer 3 and 4</p>
         </div>
       </div>
       <div class="about_jobs">
@@ -119,9 +121,10 @@
         </div>
       </div>
     </section>
+
     <!-- Skills -->
     <section id="skills" class="section">
-      <div class="section_container">
+      <div class="section__container">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>skillsmyskilllllsssss</p>
@@ -151,8 +154,8 @@
                 <span>JavaScript</span>
                 <span>50%</span>
               </div>
-              <div class="skill_bar" style="width: 50%">
-                <div class="skill_value"></div>
+              <div class="skill_bar">
+                <div class="skill_value" style="width: 50%"></div>
               </div>
             </div>
           </div>
@@ -176,16 +179,16 @@
               </ul>
             </div>
           </div>
-        </div>
       </div>
     </section>
 
     <!-- Work -->
     <section id="work" class="section">
+      <div class="section__container">
       <h1>My work</h1>
       <h2>Projects</h2>
       <div class="work__categories">
-        <button class="category__btn active">
+        <button class="category__btn active" data-filter="*">
           All<span class="category__count">8</span>
         </button>
         <button class="category__btn">
@@ -223,6 +226,7 @@
             <span>Clone coding with HTML and CSS</span>
           </div>
         </a>
+        </div>
       </div>
     </section>
     <!-- Testimonials -->
@@ -234,28 +238,29 @@
           <div class="testimonial">
             <img
               src="imgs/testimonials/Screen Shot 2023-03-20 at 4.58.56 PM.png"
-              alt="Person1"
+              alt="People"
               class="testimonial__avatar"
             />
-            <div class="testimonial__speech-bubble">
+            <div class="testimonial_speech-bubble">
               <p>
                 recommend good good
-                goodldkjhaf;ldkjfa;lkdsjf;alksdjf;lakjsd;oifjwlkdf;lakdj;lfkja;lsdkjf;alkdsjf;alksdjafl;ksjd;lfkajd;lfj
+                goodldkjhaf;ldkjfa;lkdsjf;alksdjf;lakjsd;oifjwlkdf;
+                lakdj;lfkja;lkjhlkjhlkjhlkjhlkjhlkjhlk
               </p>
               <p class="name"><a href="">Susan</a> / Disney</p>
             </div>
           </div>
           <div class="testimonial">
-            <div class="testimonial__speech-bubble">
+            <div class="testimonial_speech-bubble">
               <p>
                 goooodd verryyy
-                nicceeelkj;;;ldkjf;alkdj;flkasjdfljasd;klfja;lskdjfl;aksjd;lfkajsd;lfkja;ldkjf;alskdjf;lakjd;lkfja;ldkjfa;ldkfja;ldkjf;alkdjf;alksdjfpqoiejf;lakdjf;lkajd;lfkajs;dlkfj
+                nicceeelkj;;;ldkjf;alkdj;flkasjdfljasd;klfja;lskdjfl;aksjd;
               </p>
               <p class="name"><a href="">Jay</a> / RedRiver</p>
             </div>
             <img
               src="imgs/testimonials/Screen Shot 2023-03-20 at 5.03.43 PM.png"
-              alt="Person2"
+              alt="People"
               class="testimonial__avatar"
             />
           </div>
